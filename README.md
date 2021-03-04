@@ -1,0 +1,1 @@
+# amplify_flutter_shoppinglist
