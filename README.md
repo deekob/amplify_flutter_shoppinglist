@@ -1,6 +1,6 @@
 # smart_shopper
 
-A new Flutter project.
+A  Flutter shoppinglist using AWS Amplify project.
 
 ## Getting Started
 
