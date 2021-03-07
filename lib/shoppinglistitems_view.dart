@@ -36,12 +36,7 @@ class _ShoppingListItemsViewState extends State<ShoppingListItemsView> {
           controller: _titleController,
           decoration: InputDecoration(hintText: 'Enter groceries here'),
         ),
-        ElevatedButton(
-            onPressed: () {
-              // ignore: todo
-              // TODO Implement me
-            },
-            child: Text('Add to shopping list'))
+        ElevatedButton(onPressed: () {}, child: Text('Add to shopping list'))
       ],
     );
   }

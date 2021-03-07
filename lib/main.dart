@@ -13,8 +13,18 @@ class ShoppingApp extends StatefulWidget {
 class _ShoppingListState extends State<ShoppingApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: ShoppingListItemsView(),
+    return MaterialApp(home: ShoppingListItemsView());
+  }
+}
+
+class LoadingView extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.white,
+      child: Center(
+        child: CircularProgressIndicator(),
+      ),
     );
   }
 }
