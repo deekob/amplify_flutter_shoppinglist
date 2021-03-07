@@ -1,10 +1,10 @@
 {
-  "projectName": "smart_shopper",
-  "version": "2.0",
-  "frontend": "flutter",
   "providers": [
     "awscloudformation"
   ],
+  "projectName": "FlutterShoppingList",
+  "version": "3.1",
+  "frontend": "flutter",
   "flutter": {
     "config": {
       "ResDir": "./lib/"

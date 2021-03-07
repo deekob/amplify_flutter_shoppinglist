@@ -1,3 +1,5 @@
+import 'package:amplify_api/amplify_api.dart';
+import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smart_shopper/shoppinglistitem_bloc.dart';
@@ -39,19 +41,23 @@ class _ShoppingListState extends State<ShoppingApp> {
   }
 
   void _configureAmplify() async {
-    // Amplify.addPlugin(AmplifyAPI()); // UNCOMMENT this line once backend is deployed
-    Amplify.addPlugin(AmplifyDataStore(modelProvider: ModelProvider.instance));
-
     try {
+      Future.wait([
+        Amplify.addPlugin(AmplifyAPI()),
+        Amplify.addPlugin(
+            AmplifyDataStore(modelProvider: ModelProvider.instance)),
+        Amplify.addPlugin(AmplifyAuthCognito())
+      ]);
+
       // Once Plugins are added, configure Amplify
       await Amplify.configure(amplifyconfig);
+
+      setState(() {
+        _amplifyConfigured = true;
+      });
     } catch (e) {
       print(e);
     }
-
-    setState(() {
-      _amplifyConfigured = true;
-    });
   }
 }
 

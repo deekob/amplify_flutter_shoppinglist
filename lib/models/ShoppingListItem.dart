@@ -18,7 +18,6 @@
 import 'package:amplify_datastore_plugin_interface/amplify_datastore_plugin_interface.dart';
 import 'package:flutter/foundation.dart';
 
-// ignore: slash_for_doc_comments
 /** This is an auto generated class representing the ShoppingListItem type in your schema. */
 @immutable
 class ShoppingListItem extends Model {

@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fluttershoppinglist-staging-131044-authRole",
+      "UnauthRoleArn": "arn:aws:iam::978928857807:role/amplify-fluttershoppinglist-staging-131044-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::978928857807:role/amplify-fluttershoppinglist-staging-131044-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-fluttershoppinglist-staging-131044-deployment",
+      "UnauthRoleName": "amplify-fluttershoppinglist-staging-131044-unauthRole",
+      "StackName": "amplify-fluttershoppinglist-staging-131044",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:978928857807:stack/amplify-fluttershoppinglist-staging-131044/87028660-7f46-11eb-82ef-022591890198",
+      "AmplifyAppId": "d3vcvym8p6ocdi"
+    }
+  }
+}
