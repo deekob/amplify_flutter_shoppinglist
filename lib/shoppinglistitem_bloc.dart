@@ -38,11 +38,14 @@ class ShoppingListItemCubit extends Cubit<ShoppingListState> {
 
   void createListItems(String itemName) async {
     await _shoppingListRepo.createListItems(itemName);
-    getListItems();
   }
 
   void updateListItem(ShoppingListItem item, bool isComplete) async {
     await _shoppingListRepo.updateListItem(item, isComplete);
-    getListItems();
+  }
+
+  void observeItems() {
+    final itemStream = _shoppingListRepo.observeTodos();
+    itemStream.listen((_) => getListItems());
   }
 }

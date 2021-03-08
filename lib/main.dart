@@ -29,7 +29,9 @@ class _ShoppingListState extends State<ShoppingApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: BlocProvider(
-            create: (context) => ShoppingListItemCubit()..getListItems(),
+            create: (context) => ShoppingListItemCubit()
+              ..getListItems()
+              ..observeItems(),
             child:
                 _amplifyConfigured ? ShoppingListItemsView() : LoadingView()));
   }

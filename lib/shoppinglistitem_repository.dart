@@ -30,4 +30,8 @@ class ShoppingListItemRepository {
       throw e;
     }
   }
+
+  Stream observeTodos() {
+    return Amplify.DataStore.observe(ShoppingListItem.classType);
+  }
 }
