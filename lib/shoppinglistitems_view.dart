@@ -72,7 +72,8 @@ class _ShoppingListItemsViewState extends State<ShoppingListItemsView> {
 
   Widget _emptyTodosView() {
     return Center(
-      child: Text('No Shopping list items created'),
+      child: Text('Your shopping list is empty',
+          style: TextStyle(fontWeight: FontWeight.bold), textScaleFactor: 1.5),
     );
   }
 
